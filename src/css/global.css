@@ -20,6 +20,7 @@ button {
     background-color: transparent;
     padding: 0.8rem;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .g__section {

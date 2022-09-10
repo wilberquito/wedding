@@ -18,7 +18,7 @@
     <div class="box" />
     <p>{plaintText}</p>
     <button class="g__button" on:click={openGoogleMapsReference}>
-        VER MAPA
+       ver mapa 
     </button>
 </div>
 

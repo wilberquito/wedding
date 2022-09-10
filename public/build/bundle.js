@@ -630,7 +630,7 @@ var app = (function () {
     			p.textContent = `${/*plaintText*/ ctx[0]}`;
     			t2 = space();
     			button = element("button");
-    			button.textContent = "VER MAPA";
+    			button.textContent = "ver mapa";
     			attr_dev(div0, "class", "box svelte-1o95mjs");
     			add_location(div0, file$1, 17, 4, 538);
     			add_location(p, file$1, 18, 4, 562);
@@ -774,7 +774,7 @@ var app = (function () {
     			p.textContent = `${/*warnConfirmation*/ ctx[1]}`;
     			t3 = space();
     			button = element("button");
-    			button.textContent = "CONFIRMAR";
+    			button.textContent = "confirmar";
     			add_location(h1, file, 12, 4, 402);
     			add_location(p, file, 13, 4, 423);
     			attr_dev(button, "class", "g__button g__custom");
