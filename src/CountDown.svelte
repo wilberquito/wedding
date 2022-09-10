@@ -1,5 +1,7 @@
 <script>
-    export const weddingDate = new Date("2022-09-09 17:15:30");
+// TODO: this makes the absolute countdown calculation
+// should handle the case when the wedding date has already acomplished
+    export const weddingDate = new Date("2022-09-20 17:15:30");
 
     let remainingDays;
     let remainingHours;
