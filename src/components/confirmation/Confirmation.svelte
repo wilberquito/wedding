@@ -1,5 +1,5 @@
 <script>
-    import { openNewWindow } from "./../utils/Navigation";
+    import { openNewWindow } from "./../../utils/Navigation";
     export const title = "Confirmar Asistencia";
     export const warnConfirmation = "Confirma antes del 31 de mayo";
     export const confirmationUrl = "https://forms.gle/yw9XCV5awPuWxrVN8";

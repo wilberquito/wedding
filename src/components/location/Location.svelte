@@ -1,5 +1,5 @@
 <script>
-    import { openNewWindow } from './../utils/Navigation'
+    import { openNewWindow } from './../../utils/Navigation'
     export const weddingLocationUrl = "https://goo.gl/maps/fwkFsFwauuNjLwq18";
     export const title = "Fiesta";
 

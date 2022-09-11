@@ -4,6 +4,8 @@ body {
     --bcolor-1: rgb(229, 226, 226);
     --bcolor-2: rgb(246, 246, 246);
     --bcolor-3: rgb(115, 77, 0);
+    --ssmall: 769px;
+    --smedium: 1024px;
 }
 
 h1 {
@@ -44,7 +46,7 @@ button.g__custom {
     background-color: var(--bcolor-2);
 }
 
-@media (min-width: 769px) {
+@media (min-width: var(--ssmall)) {
     .g__section.g__custom {
         background-color: var(--bcolor-1);
     }
@@ -53,7 +55,7 @@ button.g__custom {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: var(--smedium)) {
     .g__section.g__custom {
         background-color: var(--bcolor-1);
     }
