@@ -3,6 +3,7 @@ body {
     margin: 0;
     --bcolor-1: rgb(229, 226, 226);
     --bcolor-2: rgb(246, 246, 246);
+    --bcolor-3: rgb(115, 77, 0);
 }
 
 h1 {
@@ -23,8 +24,18 @@ button {
     text-transform: uppercase;
 }
 
+
+button.g__custom {
+   background-color: var(--bcolor-3); 
+   color: var(--bcolor-1);
+}
+
+.g__section.g__custom {
+    background-color: var(--bcolor-1);
+}
+
 .g__section {
-    padding: 1rem clamp(1rem, 10vw, 10rem);
+    padding: 10vh clamp(1rem, 10vw, 10rem);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,17 +44,12 @@ button {
     background-color: var(--bcolor-2);
 }
 
-.g__section.g__custom {
-    background-image: var(--bcolor-1);
-}
-
 @media (min-width: 769px) {
     .g__section.g__custom {
         background-color: var(--bcolor-1);
     }
-
     .g__section {
-        padding: 1rem clamp(1rem, 25vw, 20rem);
+        padding: 10vh clamp(1rem, 25vw, 20rem);
     }
 }
 
@@ -52,6 +58,6 @@ button {
         background-color: var(--bcolor-1);
     }
     .g__section {
-        padding: 1rem clamp(1rem, 35vw, 40rem);
+        padding: 10vh clamp(1rem, 35vw, 40rem);
     }
 }

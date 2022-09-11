@@ -8,6 +8,3 @@
 <Location />
 <Confirmation />
 
-<style>
-	
-</style>

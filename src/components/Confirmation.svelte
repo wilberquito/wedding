@@ -12,7 +12,7 @@
 <div class="g__section g__custom">
     <h1>{title}</h1>
     <p>{warnConfirmation}</p>
-    <button class="g__button g__custom" on:click={openConfirmationGoogleForms}>
+    <button class="g__custom" on:click={openConfirmationGoogleForms}>
         confirmar
     </button>
 </div>
