@@ -1,5 +1,5 @@
 <script>
-    import { openNewWindow } from "./../../utils";
+    import { openNewWindow } from "./../utils";
 
     export const weddingLocationUrl = "https://goo.gl/maps/fwkFsFwauuNjLwq18";
     export const title = "Fiesta";
@@ -16,7 +16,7 @@
 
 <div class="g__section">
     <div class="box" />
-    <p>{plaintText}</p>
+    <p class="text">{plaintText}</p>
     <button class="g__button" on:click={openGoogleMapsReference}>
         ver mapa
     </button>

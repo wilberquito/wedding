@@ -1,5 +1,5 @@
 <script>
-    import { onInterval } from "./../../utils";
+    import { onInterval } from "./../utils";
 
     // TODO: this makes the absolute countdown calculation
     // should handle the case when the wedding date has already acomplished

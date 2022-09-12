@@ -1,5 +1,5 @@
 <script>
-    import { openNewWindow } from "./../../utils";
+    import { openNewWindow } from "./../utils";
 
     export const title = "Confirmar Asistencia";
     export const warnConfirmation = "Confirma antes del 31 de mayo";

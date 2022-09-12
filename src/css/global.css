@@ -14,6 +14,7 @@ h1 {
 
 p {
     margin: 2rem 0;
+    max-width: 35rem;
 }
 
 button {
@@ -28,8 +29,8 @@ button {
 
 
 button.g__custom {
-   background-color: var(--bcolor-3); 
-   color: var(--bcolor-1);
+    background-color: var(--bcolor-3);
+    color: var(--bcolor-1);
 }
 
 .g__section.g__custom {
@@ -46,20 +47,23 @@ button.g__custom {
     background-color: var(--bcolor-2);
 }
 
-@media (min-width: var(--ssmall)) {
+@media (min-width: 768px) {
     .g__section.g__custom {
         background-color: var(--bcolor-1);
     }
-    .g__section {
-        padding: 10vh clamp(1rem, 25vw, 20rem);
-    }
-}
 
-@media (min-width: var(--smedium)) {
-    .g__section.g__custom {
-        background-color: var(--bcolor-1);
-    }
     .g__section {
         padding: 10vh clamp(1rem, 35vw, 40rem);
     }
+}
+
+@media (min-width: 1024px) {
+    .g__section.g__custom {
+        background-color: var(--bcolor-1);
+    }
+
+    .g__section {
+        padding: 10vh clamp(1rem, 25vw, 20rem);
+    }
+
 }
