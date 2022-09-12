@@ -1,6 +1,5 @@
 <script>
-    import "./Story.css";
-    console.log("about to explain our story");
+    console.log("about to explaini our story");
 </script>
 
 <div class="g__section">

@@ -1,5 +1,6 @@
 <script>
-    import { openNewWindow } from './../../utils/Navigation'
+    import { openNewWindow } from "./../../utils";
+
     export const weddingLocationUrl = "https://goo.gl/maps/fwkFsFwauuNjLwq18";
     export const title = "Fiesta";
 
@@ -8,9 +9,8 @@
         Durba, hotel hubicado en Carretera Geldo
         Castelnovo KM1 123, Casterllnovo, Castellon`;
 
-
     function openGoogleMapsReference() {
-        openNewWindow(weddingLocationUrl)
+        openNewWindow(weddingLocationUrl);
     }
 </script>
 
@@ -18,7 +18,7 @@
     <div class="box" />
     <p>{plaintText}</p>
     <button class="g__button" on:click={openGoogleMapsReference}>
-       ver mapa 
+        ver mapa
     </button>
 </div>
 

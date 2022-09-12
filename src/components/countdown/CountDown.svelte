@@ -1,6 +1,8 @@
 <script>
-// TODO: this makes the absolute countdown calculation
-// should handle the case when the wedding date has already acomplished
+    import {onInterval} from './../../utils'
+
+    // TODO: this makes the absolute countdown calculation
+    // should handle the case when the wedding date has already acomplished
     export const weddingDate = new Date("2022-09-20 17:15:30");
 
     let remainingDays;
@@ -9,7 +11,7 @@
     let remainingSeconds;
 
     updateRemainings();
-    setInterval(updateRemainings, 1000);
+    onInterval(updateRemainings, 1000)
 
     function computeRemainings() {
         const countDownDate = weddingDate.getTime();
