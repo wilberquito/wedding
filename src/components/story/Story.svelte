@@ -30,4 +30,14 @@
         object-fit: scale-down;
         width: 30rem;
     }
+    @media (max-width: 1024px) {
+        .photos-wrapper img {
+            width: 25rem;
+        }
+    }
+    @media (max-width: 769px) {
+        .photos-wrapper img {
+            width: 100%;
+        }
+    }
 </style>

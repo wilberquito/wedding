@@ -1,5 +1,5 @@
 <script>
-    import {onInterval} from './../../utils'
+    import { onInterval } from "./../../utils";
 
     // TODO: this makes the absolute countdown calculation
     // should handle the case when the wedding date has already acomplished
@@ -11,7 +11,7 @@
     let remainingSeconds;
 
     updateRemainings();
-    onInterval(updateRemainings, 1000)
+    onInterval(updateRemainings, 1000);
 
     function computeRemainings() {
         const countDownDate = weddingDate.getTime();
@@ -73,7 +73,7 @@
 </div>
 
 <style>
-    .countdown__container {
+   .countdown__container {
         background-color: var(--bcolor-1);
         padding: 1rem;
         width: calc(100% - 2rem);
