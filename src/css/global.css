@@ -10,6 +10,7 @@ body {
 
 h1 {
     margin: 0;
+    font-family: 'Kaushan Script', cursive;
 }
 
 p {
@@ -65,5 +66,5 @@ button.g__custom {
     .g__section {
         padding: 10vh clamp(1rem, 25vw, 20rem);
     }
-
 }
+
