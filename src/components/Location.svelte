@@ -1,26 +1,25 @@
 <script>
-    import { openNewWindow } from "./../utils";
+    import { data } from './../assets/data.json';
+        import { openNewWindow } from "./../utils";
 
-    export const weddingLocationUrl = "https://goo.gl/maps/fwkFsFwauuNjLwq18";
-    export const title = "Fiesta";
+        const {
+                googleAddress,
+                description,
+                title
+            } = data['location'];
 
-    export const plaintText = `La fiesta sera el sabado 09 de julio de 2022.
-        Os esperamos a las 19:30 hs en Masia
-        Durba, hotel hubicado en Carretera Geldo
-        Castelnovo KM1 123, Casterllnovo, Castellon`;
-
-    function openGoogleMapsReference() {
-        openNewWindow(weddingLocationUrl);
-    }
+        function openGoogleMapsReference() {
+                openNewWindow(googleAddress);
+            }
 </script>
 
 <div class="g__section">
     <div class="box" />
-    <p class="text">{plaintText}</p>
+    <p class="text">{description}</p>
     <button class="g__button" on:click={openGoogleMapsReference}>
         ver mapa
     </button>
-</div>
+    </div>
 
 <style>
     .box {
@@ -29,3 +28,4 @@
         background-color: blue;
     }
 </style>
+

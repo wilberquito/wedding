@@ -1,13 +1,13 @@
 <script>
     import { openNewWindow } from "./../utils";
 
-    export const title = "Confirmar Asistencia";
-    export const warnConfirmation = "Confirma antes del 31 de mayo";
-    export const confirmationUrl = "https://forms.gle/yw9XCV5awPuWxrVN8";
+        export const title = "Confirmar Asistencia";
+        export const warnConfirmation = "Confirma antes del 31 de mayo";
+        export const confirmationUrl = "https://forms.gle/yw9XCV5awPuWxrVN8";
 
-    function openConfirmationGoogleForms() {
-        openNewWindow(confirmationUrl);
-    }
+        function openConfirmationGoogleForms() {
+                openNewWindow(confirmationUrl);
+            }
 </script>
 
 <div class="g__section g__custom">
