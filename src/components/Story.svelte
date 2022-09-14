@@ -1,28 +1,23 @@
 <script>
-    console.log("about to explaini our story");
+    import { data } from './../assets/data.json';
+
+        const {
+                photos,
+                title,
+                description
+            } = data['story'];
 </script>
 
 <div class="g__section">
-    <h1>Nuestra historia</h1>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, minima
-        magnam autem consectetur, soluta tempore id aliquam voluptatibus vitae
-        laboriosam fugiat, esse illo veniam praesentium velit incidunt similique
-        eos recusandae?
-    </p>
+    <h1>{title}</h1>
+    <p>{description}</p>
     <div class="photos-wrapper">
-        <img
-            src="https://drive.google.com/uc?id=1OUz8ahfySWjSoH07tQys4xLWcAHFw3GW"
-            alt=""
-        />
-        <img
-            src="https://drive.google.com/uc?id=1OUz8ahfySWjSoH07tQys4xLWcAHFw3GW"
-            alt=""
-        />
-        <img
-            src="https://drive.google.com/uc?id=1OUz8ahfySWjSoH07tQys4xLWcAHFw3GW"
-            alt=""
-        />
+        {#each photos as photo}
+            <img
+                    src="{photo}"
+                    alt="wedding"
+                    />
+        {/each}
     </div>
 </div>
 
@@ -54,3 +49,4 @@
         }
     }
 </style>
+

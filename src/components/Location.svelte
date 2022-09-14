@@ -14,18 +14,10 @@
 </script>
 
 <div class="g__section">
-    <div class="box" />
+    <h1>{title}</h1>
     <p class="text">{description}</p>
     <button class="g__button" on:click={openGoogleMapsReference}>
         ver mapa
     </button>
-    </div>
-
-<style>
-    .box {
-        width: 10rem;
-        height: 10rem;
-        background-color: blue;
-    }
-</style>
+</div>
 

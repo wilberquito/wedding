@@ -1,7 +1,6 @@
 <script>
     import { openNewWindow } from "./../utils";
         import {data} from './../assets/data.json'
-        console.log(data['confirmation'])
 
         const {
                 googleDocs,
