@@ -1,48 +1,61 @@
 <script>
     import { onInterval } from "./../utils";
 
-    // TODO: this makes the absolute countdown calculation
-    // should handle the case when the wedding date has already acomplished
-    export const weddingDate = new Date("2022-09-20 17:15:30");
+        // TODO: this makes the absolute countdown calculation
+        // should handle the case when the wedding date has already acomplished
+        export const weddingDate = new Date("2022-09-20 17:15:30");
 
-    let remainingDays;
-    let remainingHours;
-    let remainingMinuts;
-    let remainingSeconds;
+        let remainingDays;
+        let remainingHours;
+        let remainingMinuts;
+        let remainingSeconds;
 
-    updateRemainings();
-    onInterval(updateRemainings, 1000);
+        updateRemainings();
+        onInterval(updateRemainings, 1000);
 
-    function computeRemainings() {
-        const countDownDate = weddingDate.getTime();
-        const now = new Date().getTime();
-        const distance = Math.abs(countDownDate - now);
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor(
-            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        function updateRemainings() {
+                let { days, hours, minutes, seconds } = computeRemainings();
+                remainingDays = days;
+                remainingHours = hours;
+                remainingMinuts = minutes;
+                remainingSeconds = seconds;
+            }
 
-        return {
-            days,
-            hours,
-            minutes,
-            seconds,
-        };
-    }
+        function computeRemainings() {
+                if (hasBeenHeld()) {
+                        return {
+                                days: 0,
+                                hours: 0,
+                                minutes: 0,
+                                seconds: 0
+                            }
+                    }
+                const countDownDate = weddingDate.getTime();
+                const now = new Date().getTime();
+                const distance = Math.abs(countDownDate - now);
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor(
+                        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                    );
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    function updateRemainings() {
-        let { days, hours, minutes, seconds } = computeRemainings();
-        remainingDays = days;
-        remainingHours = hours;
-        remainingMinuts = minutes;
-        remainingSeconds = seconds;
-    }
+                return {
+                        days,
+                        hours,
+                        minutes,
+                        seconds,
+                    };
+            }
 
-    function zeroPad(num, pads = 2) {
-        return String(num).padStart(pads, "0");
-    }
+        function zeroPad(num, pads = 2) {
+                return String(num).padStart(pads, "0");
+            }
+
+        function hasBeenHeld() {
+                return new Date() >= weddingDate 
+            }
+
 </script>
 
 <div class="countdown__container">
@@ -73,7 +86,7 @@
 </div>
 
 <style>
-   .countdown__container {
+    .countdown__container {
         background-color: var(--bcolor-1);
         padding: 1rem;
         width: calc(100% - 2rem);
