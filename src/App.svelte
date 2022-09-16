@@ -8,8 +8,10 @@
 
         const {
                 confirmation,
-                location
+                location,
+                songs
             } = data;
+        console.log(songs)
 </script>
 
 <CountDown />
@@ -19,15 +21,23 @@
     titleImg="images/palm.png"
     title={location.title}
     description={location.description} 
-    buttonText="ver mapa" 
-    buttonExternalUrl={location.googleAddress} />
+    buttonText={location.buttonText} 
+    buttonExternalUrl={location.src} />
 
 <!-- confirmation -->
  <BasicSection 
         title={confirmation.title}
     description={confirmation.description} 
-    buttonText="confirmar" 
-    buttonExternalUrl={confirmation.googleDocs} />
+    buttonText={location.buttonText} 
+    buttonExternalUrl={confirmation.src} />
 
  <Story /> 
+
+<!-- songs -->
+ <BasicSection 
+        title={songs.title}
+    description={songs.description} 
+    buttonText={songs.buttonText}
+    buttonExternalUrl={songs.src} />
+
 
