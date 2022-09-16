@@ -26,6 +26,7 @@ button {
     padding: 0.8rem;
     margin: 0;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 
@@ -39,7 +40,7 @@ button.g__custom {
 }
 
 .g__section {
-    padding: 10vh clamp(1rem, 10vw, 10rem);
+    padding: 10vh clamp(1rem, 5vw, 10rem);
     display: flex;
     align-items: center;
     justify-content: center;

@@ -27,25 +27,32 @@
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
         grid-auto-rows: minmax(100px, auto);
+
     }
-    .photos-wrapper img {
+    .photos-wrapper > img {
         object-fit: scale-down;
-        width: 30rem;
+        width: 100%;
+        transition: opacity 100ms ease;
+        cursor: pointer;
     }
-    @media (max-width: 1024px) {
+
+    .photos-wrapper:has(img:hover) img:not(:hover) {
+        opacity: .7;
+    }
+    @media (min-width: 769px) {
+        .photos-wrapper {
+            grid-gap: 10px;
+        }
+        .photos-wrapper > img {
+            width: 30rem;
+        }
+    }
+    @media (min-width: 1024px) {
         .photos-wrapper {
             grid-gap: 15px;
         }
-        .photos-wrapper img {
-            width: 25rem;
-        }
-    }
-    @media (max-width: 769px) {
-        .photos-wrapper {
-            grid-gap: 15px;
-        }
-        .photos-wrapper img {
-            width: 100%;
+        .photos-wrapper > img {
+            width: 35rem;
         }
     }
 </style>
