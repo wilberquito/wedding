@@ -1,5 +1,8 @@
 {
     "data": {
+        "countdown": {
+            "weddingDate": "2022-09-17 17:25:30"
+        },
         "location" : {
             "googleAddress": "https://goo.gl/maps/fwkFsFwauuNjLwq18",
             "title": "Fiesta",

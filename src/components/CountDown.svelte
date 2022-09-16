@@ -1,7 +1,8 @@
 <script>
     import { onInterval } from "./../utils";
+        import { data } from './../assets/data.json';
 
-        export const weddingDate = new Date("2022-09-15 17:25:30");
+        export const weddingDate = new Date(data['countdown']['weddingDate']);
 
         let remainingDays;
         let remainingHours;
