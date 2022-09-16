@@ -10,10 +10,10 @@
                 confirmation,
                 location
             } = data;
-        console.log(confirmation, location) 
 </script>
 
 <CountDown />
+
 <!-- location -->
 <BasicSection 
     titleImg="images/palm.png"
@@ -21,8 +21,13 @@
     description={location.description} 
     buttonText="ver mapa" 
     buttonExternalUrl={location.googleAddress} />
-    <Confirmation />
-    <Story /> 
 
-    <BasicSection description="hola"/>
+<!-- confirmation -->
+ <BasicSection 
+        title={confirmation.title}
+    description={confirmation.description} 
+    buttonText="confirmar" 
+    buttonExternalUrl={confirmation.googleDocs} />
+
+ <Story /> 
 

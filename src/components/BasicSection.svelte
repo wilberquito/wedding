@@ -1,12 +1,12 @@
 <script>
     import { openNewWindow } from "./../utils";
-        export let titleImg;
-        export let title;
-        export let description;
-        export let buttonText;
-        export let buttonExternalUrl;
+        export let titleImg = undefined;
+        export let title = undefined;
+        export let description = undefined;
+        export let buttonText = undefined;
+        export let buttonExternalUrl = undefined;
 
-        const openExternalUrl = () => openNewWindow(externalUrl)
+        const openExternalUrl = () => openNewWindow(buttonExternalUrl)
 </script>
 
 <div class="g__section">
