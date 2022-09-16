@@ -1,8 +1,7 @@
 <script>
     import { onInterval } from "./../utils";
-        import { data } from './../assets/data.json';
 
-        export const weddingDate = new Date(data['countdown']['weddingDate']);
+        export let limitDate = new Date() 
 
         let remainingDays;
         let remainingHours;
@@ -29,7 +28,7 @@
                                 seconds: 0
                             }
                     }
-                const countDownDate = weddingDate.getTime();
+                const countDownDate = limitDate.getTime();
                 const now = new Date().getTime();
                 const distance = Math.abs(countDownDate - now);
                 const days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -52,7 +51,7 @@
             }
 
         function hasBeenHeld() {
-                return new Date() >= weddingDate 
+                return new Date() >= limitDate 
             }
 
 </script>

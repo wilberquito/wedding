@@ -7,15 +7,15 @@
         import BasicSection from './components/BasicSection.svelte'
 
         const {
+                countdown,
                 story,
                 confirmation,
                 location,
                 songs
             } = data;
-        console.log(songs)
 </script>
 
-<CountDown />
+<CountDown limitDate={new Date(countdown.weddingDate)} />
 
 <!-- location -->
 <BasicSection 
@@ -39,7 +39,6 @@
 
 <!-- songs -->
 <BasicSection 
-        titleImg="images/palm.png"
         title={songs.title}
         description={songs.description} 
         buttonText={songs.buttonText}
