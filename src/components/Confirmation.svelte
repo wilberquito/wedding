@@ -9,7 +9,7 @@
             } = data['confirmation']
 
         function openConfirmationGoogleForms() {
-                openNewWindow(googleAddress);
+                openNewWindow(googleDocs);
             }
 </script>
 
