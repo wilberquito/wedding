@@ -1,11 +1,8 @@
 <script>
     import { data } from './../assets/data.json';
-
-        const {
-                photos,
-                title,
-                description
-            } = data['story'];
+        export let photos = [];
+        export let title = undefined;
+        export let description = undefined;
 </script>
 
 <div class="g__section">

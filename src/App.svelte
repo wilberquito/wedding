@@ -7,6 +7,7 @@
         import BasicSection from './components/BasicSection.svelte'
 
         const {
+                story,
                 confirmation,
                 location,
                 songs
@@ -18,26 +19,30 @@
 
 <!-- location -->
 <BasicSection 
-    titleImg="images/palm.png"
-    title={location.title}
-    description={location.description} 
-    buttonText={location.buttonText} 
-    buttonExternalUrl={location.src} />
+        titleImg="images/palm.png"
+        title={location.title}
+        description={location.description} 
+        buttonText={location.buttonText} 
+        buttonExternalUrl={location.src} />
 
 <!-- confirmation -->
- <BasicSection 
+<BasicSection 
         title={confirmation.title}
-    description={confirmation.description} 
-    buttonText={location.buttonText} 
-    buttonExternalUrl={confirmation.src} />
+        description={confirmation.description} 
+        buttonText={location.buttonText} 
+        buttonExternalUrl={confirmation.src} />
 
- <Story /> 
+<Story 
+        title={story.title} 
+        description={story.description} 
+        photos={story.photos} /> 
 
 <!-- songs -->
- <BasicSection 
+<BasicSection 
+        titleImg="images/palm.png"
         title={songs.title}
-    description={songs.description} 
-    buttonText={songs.buttonText}
-    buttonExternalUrl={songs.src} />
+        description={songs.description} 
+        buttonText={songs.buttonText}
+        buttonExternalUrl={songs.src} />
 
 
