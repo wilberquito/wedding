@@ -6,30 +6,6 @@
 	import BasicSection from './components/BasicSection.svelte';
 
 	const { countdown, story, confirmation, location, songs, gift } = data;
-
-	function animatePhotos(photos) {
-		photos.forEach(entry => {
-			if (entry.isIntersecting) {
-				entry.target.classList.add('show');
-			}
-		});
-	}
-
-	const animatePhotosOptions = {
-		threshold: 1
-	};
-
-	const photosObserver = new IntersectionObserver(
-		animatePhotos,
-		animatePhotosOptions
-	);
-
-	onMount(() => {
-		console.log('hola');
-		const photos = document.querySelectorAll('.photos__wrapper > img');
-		photos.forEach(photo => photo.classList.add('hidden'));
-		photos.forEach(photo => photosObserver.observe(photo));
-	});
 </script>
 
 <CountDown limitDate={new Date(countdown.weddingDate)} />

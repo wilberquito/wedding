@@ -1,83 +1,67 @@
 body {
-    padding: 0;
-    margin: 0;
-    --bcolor-1: rgb(229, 226, 226);
-    --bcolor-2: rgb(246, 246, 246);
-    --bcolor-3: rgb(115, 77, 0);
-    --ssmall: 768px;
-    --smedium: 1024px;
+	padding: 0;
+	margin: 0;
+	--bcolor-1: rgb(229, 226, 226);
+	--bcolor-2: rgb(246, 246, 246);
+	--bcolor-3: rgb(115, 77, 0);
+	--ssmall: 768px;
+	--smedium: 1024px;
+	overflow-x: hidden;
 }
 
 h1 {
-    margin: 0;
-    font-family: 'Kaushan Script', cursive;
-    text-transform: lowercase;
+	margin: 0;
+	font-family: 'Kaushan Script', cursive;
+	text-transform: lowercase;
 }
 
 h1:first-letter {
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 p {
-    margin: 2rem 0;
-    max-width: 35rem;
+	margin: 2rem 0;
+	max-width: 35rem;
 }
 
 button {
-    border-radius: 10px;
-    border: 3px solid rgb(27, 27, 27);
-    text-transform: uppercase;
-    background-color: transparent;
-    padding: 0.8rem;
-    margin: 0;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-.hidden {
-    opacity: 0;
-    filter: blur(50px);
-    transform: translateX(-100%);
-    transition: all 1s !important;
-}
-
-.hidden:nth-child(even) {
-    transform: translateX(100%);
-}
-
-.show {
-    opacity: 1;
-    filter: blur(0px);
-    transform: translateX(0) !important;
+	border-radius: 10px;
+	border: 3px solid rgb(27, 27, 27);
+	text-transform: uppercase;
+	background-color: transparent;
+	padding: 0.8rem;
+	margin: 0;
+	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .g__section {
-    padding: 10vh clamp(1rem, 5vw, 10rem);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    background-color: var(--bcolor-2);
+	padding: 5vh clamp(1rem, 5vw, 10rem);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	background-color: var(--bcolor-2);
 }
 
 .g__section:nth-child(odd) {
-    background-color: var(--bcolor-1);
+	background-color: var(--bcolor-1);
 }
 
 .g__section:nth-child(odd) button {
-    background-color: var(--bcolor-3);
-    color: var(--bcolor-1);
+	background-color: var(--bcolor-3);
+	color: var(--bcolor-1);
 }
 
 @media (min-width: 768px) {
-    .g__section {
-        padding: 10vh clamp(1rem, 35vw, 40rem);
-    }
+	.g__section {
+		padding: 10vh clamp(1rem, 35vw, 40rem);
+	}
 }
 
 @media (min-width: 1024px) {
-    .g__section {
-        padding: 10vh clamp(1rem, 25vw, 20rem);
-    }
+	.g__section {
+		padding: 10vh clamp(1rem, 25vw, 20rem);
+	}
 }
