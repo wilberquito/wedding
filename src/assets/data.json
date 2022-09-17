@@ -29,6 +29,12 @@
             "src": "https://docs.google.com/forms/d/e/1FAIpQLScxVRO6PHuISkP2nnlyvVcEKSVmiMVwp-tpETYwLIgplAyuBw/viewform",
             "title": "Canciones que no pueden faltar?",
             "description": "Vitae, nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent."
-      } 
+        },
+        "gift": {
+            "buttonText": "ver datos",
+            "src": "https://docs.google.com/forms/d/e/1FAIpQLScxVRO6PHuISkP2nnlyvVcEKSVmiMVwp-tpETYwLIgplAyuBw/viewform",
+            "title": "Regalo",
+            "description": "Vitae, nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent."
+        }
     }
 }

@@ -11,7 +11,8 @@
                 story,
                 confirmation,
                 location,
-                songs
+                songs,
+                gift
             } = data;
 </script>
 
@@ -44,4 +45,11 @@
         buttonText={songs.buttonText}
         buttonExternalUrl={songs.src} />
 
-
+<!-- gift -->
+<BasicSection 
+        titleImg="images/palm.png"
+        title={gift.title}
+        description={gift.description} 
+        buttonText={gift.buttonText}
+        buttonExternalUrl={gift.src} />
+        
