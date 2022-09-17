@@ -6,13 +6,13 @@
         "location" : {
             "buttonText": "ver mapa",
             "src": "https://goo.gl/maps/fwkFsFwauuNjLwq18",
-            "title": "Fiesta",
+            "title": "fiesta",
             "description": "Proin est. Sed eleifend odio sed leo. Mauris tortor turpis, dignissim vel, ornare ac, ultricies quis, magna. Phasellus lacinia, augue ac dictum tempor, nisi felis ornare magna, eu vehicula tellus enim eu neque. Fusce est eros, sagittis eget, interdum a, ornare suscipit, massa. Sed vehicula elementum ligula. Aliquam erat volutpat. Donec odio. Quisque nunc. Integer cursus feugiat magna. Fusce ac elit ut elit aliquam suscipit. Duis leo est, interdum nec, varius in, facilisis vitae, odio. Phasellus eget leo at urna adipiscing vulputate. Nam eu erat vel arcu tristique mattis. Nullam placerat lorem non augue. Cras et velit. Morbi sapien nulla, volutpat a."
         },
         "confirmation": {
             "buttonText": "confirmar",
             "src": "https://docs.google.com/forms/d/e/1FAIpQLScxVRO6PHuISkP2nnlyvVcEKSVmiMVwp-tpETYwLIgplAyuBw/viewform",
-            "title": "Confirmar Asistencia",
+            "title": "confirmar asistencia",
             "description": "Augue, sollicitudin sed, tempus tincidunt,pulvinar a, lectus. Vestibulum ante ipsum."
         },
         "story": {
@@ -21,19 +21,19 @@
                 "https://drive.google.com/uc?id=1OUz8ahfySWjSoH07tQys4xLWcAHFw3GW",
                 "https://drive.google.com/uc?id=1OUz8ahfySWjSoH07tQys4xLWcAHFw3GW"
             ],
-            "title": "Nuestra historia",
+            "title": "nuestra historia",
             "description": "Lectus, tincidunt et, scelerisque vitae, aliquam vitae, justo. Quisque eget erat. Donec aliquet porta magna. Sed nisl. Ut tellus. Suspendisse quis mi eget dolor sagittis tristique. Aenean non pede eget nisl bibendum gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos jhimenaeos. Morbi laoreet. Suspendisse potenti. Donec accumsan porta  felis. Fusce tristique leo quis pede. Cras nibh. Sed eget est vitae tortor mollis jullamcorper. Suspendisse placerat dolor a dui. Vestibulum condimentum dui et elit. Pellentesque porttitor ipsum at ipsum. Nam massa. Duis lorem. Donec porta. Proin ligula. Aenean nunc massa, dapibus quis, imperdiet id, commodo a, lacus. Cras."
         },
         "songs": {
             "buttonText": "sugerir musica",
             "src": "https://docs.google.com/forms/d/e/1FAIpQLScxVRO6PHuISkP2nnlyvVcEKSVmiMVwp-tpETYwLIgplAyuBw/viewform",
-            "title": "Canciones que no pueden faltar?",
+            "title": "canciones que no pueden faltar?",
             "description": "Vitae, nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent."
         },
         "gift": {
             "buttonText": "ver datos",
             "src": "https://docs.google.com/forms/d/e/1FAIpQLScxVRO6PHuISkP2nnlyvVcEKSVmiMVwp-tpETYwLIgplAyuBw/viewform",
-            "title": "Regalo",
+            "title": "regalo",
             "description": "Vitae, nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent."
         }
     }
