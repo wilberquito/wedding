@@ -34,6 +34,23 @@ button {
     cursor: pointer;
 }
 
+.hidden {
+    opacity: 0;
+    filter: blur(50px);
+    transform: translateX(-100%);
+    transition: all 1s !important;
+}
+
+.hidden:nth-child(even) {
+    transform: translateX(100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0) !important;
+}
+
 .g__section {
     padding: 10vh clamp(1rem, 5vw, 10rem);
     display: flex;
@@ -64,4 +81,3 @@ button {
         padding: 10vh clamp(1rem, 25vw, 20rem);
     }
 }
-

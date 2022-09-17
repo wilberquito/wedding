@@ -1,55 +1,75 @@
 <script>
-    import { data } from './assets/data.json';
+        import { onMount } from "svelte";
+        import { data } from "./assets/data.json";
         import CountDown from "./components/CountDown.svelte";
-        import Location from "./components/Location.svelte";
-        import Confirmation from "./components/Confirmation.svelte";
         import Story from "./components/Story.svelte";
-        import BasicSection from './components/BasicSection.svelte'
+        import BasicSection from "./components/BasicSection.svelte";
 
-        const {
-                countdown,
-                story,
-                confirmation,
-                location,
-                songs,
-                gift
-            } = data;
+        const { countdown, story, confirmation, location, songs, gift } = data;
+
+        function animatePhotos(photos) {
+                photos.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                                entry.target.classList.add("show");
+                        } 
+                });
+        }
+         
+        const animatePhotosOptions = {
+                threshold: 1
+        }
+
+        const photosObserver = new IntersectionObserver(animatePhotos, animatePhotosOptions)
+        
+
+        onMount(() => {
+                console.log('hola')
+                const photos = document.querySelectorAll(
+                        ".photos__wrapper > img"
+                );
+                photos.forEach((photo) => photo.classList.add("hidden"));
+                photos.forEach((photo) => photosObserver.observe(photo));
+        });
 </script>
 
 <CountDown limitDate={new Date(countdown.weddingDate)} />
 
 <!-- location -->
-<BasicSection 
+<BasicSection
         titleImg="images/palm.png"
         title={location.title}
-        description={location.description} 
-        buttonText={location.buttonText} 
-        buttonExternalUrl={location.src} />
+        description={location.description}
+        buttonText={location.buttonText}
+        buttonExternalUrl={location.src}
+/>
 
 <!-- confirmation -->
-<BasicSection 
+<BasicSection
         title={confirmation.title}
-        description={confirmation.description} 
-        buttonText={location.buttonText} 
-        buttonExternalUrl={confirmation.src} />
+        description={confirmation.description}
+        buttonText={location.buttonText}
+        buttonExternalUrl={confirmation.src}
+/>
 
-<Story 
-        title={story.title} 
-        description={story.description} 
-        photos={story.photos} /> 
+<Story
+        title={story.title}
+        description={story.description}
+        photos={story.photos}
+/>
 
 <!-- songs -->
-<BasicSection 
+<BasicSection
         title={songs.title}
-        description={songs.description} 
+        description={songs.description}
         buttonText={songs.buttonText}
-        buttonExternalUrl={songs.src} />
+        buttonExternalUrl={songs.src}
+/>
 
 <!-- gift -->
-<BasicSection 
+<BasicSection
         titleImg="images/palm.png"
         title={gift.title}
-        description={gift.description} 
+        description={gift.description}
         buttonText={gift.buttonText}
-        buttonExternalUrl={gift.src} />
-        
+        buttonExternalUrl={gift.src}
+/>

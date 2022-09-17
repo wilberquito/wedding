@@ -8,7 +8,7 @@
 <div class="g__section">
     <h1>{title}</h1>
     <p>{description}</p>
-    <div class="photos-wrapper">
+    <div class="photos__wrapper">
         {#each photos as photo}
             <img
                     src="{photo}"
@@ -19,36 +19,35 @@
 </div>
 
 <style>
-    .photos-wrapper {
+    .photos__wrapper {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
         grid-auto-rows: minmax(100px, auto);
 
     }
-    .photos-wrapper > img {
+    .photos__wrapper > img {
         object-fit: scale-down;
         width: 100%;
         transition: opacity 100ms ease;
         cursor: pointer;
     }
-
-    .photos-wrapper:has(img:hover) img:not(:hover) {
+    .photos__wrapper:has(img:hover) img:not(:hover) {
         opacity: .7;
     }
     @media (min-width: 769px) {
-        .photos-wrapper {
+        .photos__wrapper {
             grid-gap: 10px;
         }
-        .photos-wrapper > img {
+        .photos__wrapper > img {
             width: 30rem;
         }
     }
     @media (min-width: 1024px) {
-        .photos-wrapper {
+        .photos__wrapper {
             grid-gap: 15px;
         }
-        .photos-wrapper > img {
+        .photos__wrapper > img {
             width: 35rem;
         }
     }
