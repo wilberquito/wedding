@@ -1,8 +1,8 @@
 <script>
     import { data } from './../assets/data.json';
-        export let photos = [];
-        export let title = undefined;
-        export let description = undefined;
+    export let photos = [];
+    export let title = undefined;
+    export let description = undefined;
 </script>
 
 <div class="g__section">
@@ -10,10 +10,7 @@
     <p>{description}</p>
     <div class="photos__wrapper">
         {#each photos as photo}
-            <img
-                    src="{photo}"
-                    alt="wedding"
-                    />
+            <img src={photo} alt="wedding" />
         {/each}
     </div>
 </div>
@@ -24,7 +21,6 @@
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
         grid-auto-rows: minmax(100px, auto);
-
     }
     .photos__wrapper > img {
         object-fit: scale-down;
@@ -33,7 +29,7 @@
         cursor: pointer;
     }
     .photos__wrapper:has(img:hover) img:not(:hover) {
-        opacity: .7;
+        opacity: 0.7;
     }
     @media (min-width: 769px) {
         .photos__wrapper {
@@ -52,4 +48,3 @@
         }
     }
 </style>
-
