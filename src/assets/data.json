@@ -3,7 +3,7 @@
         "countdown": {
             "weddingDate": "2022-09-17 17:25:30"
         },
-        "location" : {
+        "location": {
             "buttonText": "ver mapa",
             "src": "https://goo.gl/maps/fwkFsFwauuNjLwq18",
             "title": "fiesta",
@@ -35,6 +35,12 @@
             "src": "https://docs.google.com/forms/d/e/1FAIpQLScxVRO6PHuISkP2nnlyvVcEKSVmiMVwp-tpETYwLIgplAyuBw/viewform",
             "title": "regalo",
             "description": "Vitae, nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent."
+        },
+        "instagram": {
+            "hashtag": "#gycwedding",
+            "hashtagSrc": "https://www.instagram.com/explore/tags/hola/",
+            "buttonText": "ver en instagram",
+            "backgroundSrc": "https://drive.google.com/uc?id=1OUz8ahfySWjSoH07tQys4xLWcAHFw3GW"
         }
     }
 }

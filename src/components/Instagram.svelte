@@ -2,23 +2,21 @@
     import { openNewWindow } from './../utils';
 
     export let hashtag = undefined;
-    export let description = undefined;
     export let buttonText = undefined;
-    export let hashtagUrl = 'https://www.instagram.com/explore/tags/hola/';
-    export let srcBackground =
-        'https://drive.google.com/uc?id=1OUz8ahfySWjSoH07tQys4xLWcAHFw3GW';
+    export let hashtagSrc = undefined;
+    export let backgroundSrc = undefined;
 
     function openHashtagUrl() {
-        openNewWindow(hashtagUrl);
+        openNewWindow(hashtagSrc);
     }
 </script>
 
 <div class="no__limit">
-    <div class="background" style="--url: url({srcBackground})" />
+    <div class="background" style="--url: url({backgroundSrc})" />
     <div class="floating">
         <i class="fab fa-instagram" />
-        <h1 class="insta">#Hashtag</h1>
-        <button on:click={openHashtagUrl}>Instagram</button>
+        <h1 class="insta">{hashtag}</h1>
+        <button on:click={openHashtagUrl}>{buttonText}</button>
     </div>
 </div>
 
@@ -79,5 +77,8 @@
     }
     button:active {
         background-color: #77777759;
+    }
+    h1:first-letter {
+        text-transform: lowercase;
     }
 </style>

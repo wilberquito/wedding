@@ -6,7 +6,8 @@
     import BasicSection from './components/BasicSection.svelte';
     import Instagram from './components/Instagram.svelte';
 
-    const { countdown, story, confirmation, location, songs, gift } = data;
+    const { countdown, story, confirmation, location, songs, gift, instagram } = data;
+    console.log(instagram);
 </script>
 
 <CountDown limitDate={new Date(countdown.weddingDate)} />
@@ -47,4 +48,9 @@
     buttonExternalUrl={gift.src}
 />
 
-<Instagram description={gift.description} />
+<Instagram
+    hashtag={instagram.hashtag}
+    hashtagSrc={instagram.hashtagSrc}
+    buttonText={instagram.buttonText}
+    backgroundSrc={instagram.backgroundSrc}
+/>
