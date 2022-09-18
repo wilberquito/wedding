@@ -1,17 +1,24 @@
 <script>
+    import { openNewWindow } from './../utils';
+
     export let hashtag = undefined;
     export let description = undefined;
     export let buttonText = undefined;
-    export let hashtagUrl = undefined;
+    export let hashtagUrl = 'https://www.instagram.com/explore/tags/hola/';
     export let srcBackground =
         'https://drive.google.com/uc?id=1OUz8ahfySWjSoH07tQys4xLWcAHFw3GW';
+
+    function openHashtagUrl() {
+        openNewWindow(hashtagUrl);
+    }
 </script>
 
 <div class="no__limit">
-    <div class="background" />
+    <div class="background" style="--url: url({srcBackground})" />
     <div class="floating">
         <i class="fab fa-instagram" />
         <h1 class="insta">#Hashtag</h1>
+        <button on:click={openHashtagUrl}>Instagram</button>
     </div>
 </div>
 
@@ -38,7 +45,7 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background-image: url('https://drive.google.com/uc?id=1OUz8ahfySWjSoH07tQys4xLWcAHFw3GW');
+        background-image: var(--url);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -65,8 +72,12 @@
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
             Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
     }
-    img {
-        width: 50px;
-        margin-bottom: 1rem;
+    button {
+        margin-top: 2rem;
+        border: 3px solid var(--bcolor-1);
+        color: var(--bcolor-1);
+    }
+    button:active {
+        background-color: #77777759;
     }
 </style>
