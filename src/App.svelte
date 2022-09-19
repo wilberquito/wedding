@@ -6,8 +6,10 @@
     import BasicSection from './components/BasicSection.svelte';
     import Instagram from './components/Instagram.svelte';
 
-    const { countdown, story, confirmation, location, songs, gift, instagram } = data;
-    console.log(instagram);
+    const { metadata, countdown, story, confirmation, location, songs, gift, instagram } =
+        data;
+
+    document.title = metadata?.title || document.title;
 </script>
 
 <CountDown limitDate={new Date(countdown.weddingDate)} />
