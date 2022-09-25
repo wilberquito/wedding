@@ -1,19 +1,22 @@
 {
     "data": {
+        "metadata": {
+            "title": "Boda Genís y Cesia"
+        },
         "countdown": {
-            "weddingDate": "2022-09-17 17:25:30"
+            "weddingDate": "2023-07-15 17:00:00"
         },
         "location": {
-            "buttonText": "ggggggggver mapa",
-            "src": "https://goo.gl/maps/fwkFsFwauuNjLwq18",
+            "buttonText": "ver mapa",
+            "src": "https://goo.gl/maps/yjku59jU9Bwwcqzw6",
             "title": "fiesta",
-            "description": "Proin est. Sed eleifend odio sed leo. Mauris tortor turpis, dignissim vel, ornare ac, ultricies quis, magna. Phasellus lacinia, augue ac dictum tempor, nisi felis ornare magna, eu vehicula tellus enim eu neque. Fusce est eros, sagittis eget, interdum a, ornare suscipit, massa. Sed vehicula elementum ligula. Aliquam erat volutpat. Donec odio. Quisque nunc. Integer cursus feugiat magna. Fusce ac elit ut elit aliquam suscipit. Duis leo est, interdum nec, varius in, facilisis vitae, odio. Phasellus eget leo at urna adipiscing vulputate. Nam eu erat vel arcu tristique mattis. Nullam placerat lorem non augue. Cras et velit. Morbi sapien nulla, volutpat a."
+            "description": "Nos casamos y hemos hecho planes para compartir con vosotros. Nos hace mucha ilusión invitaros a la ceremonia que tendrá lugar el sábado 15 de julio de 2023 a las 17:00 h pm en la masia Mas Geroni en Vilafreser (Girona)."
         },
         "confirmation": {
-            "buttonText": "confirmar",
-            "src": "https://docs.google.com/forms/d/e/1FAIpQLScxVRO6PHuISkP2nnlyvVcEKSVmiMVwp-tpETYwLIgplAyuBw/viewform",
+            "buttonText": "confirmación",
+            "src": "https://forms.gle/fgQnm1fjGMxq2qXo7",
             "title": "confirmar asistencia",
-            "description": "Augue, sollicitudin sed, tempus tincidunt,pulvinar a, lectus. Vestibulum ante ipsum."
+            "description": "¿Qué por qué tienes que venir? Porque nos reiremos a carcajadas, brindaremos juntos, cantaremos hasta quedarnos afónicos y bailaremos bajo una noche estrellada. Es un buen plan, ¿no?"
         },
         "story": {
             "photos": [
@@ -27,7 +30,7 @@
         "songs": {
             "buttonText": "sugerir musica",
             "src": "https://docs.google.com/forms/d/e/1FAIpQLScxVRO6PHuISkP2nnlyvVcEKSVmiMVwp-tpETYwLIgplAyuBw/viewform",
-            "title": "canciones que no pueden faltar?",
+            "title": "Canciones que no pueden faltar",
             "description": "Vitae, nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent."
         },
         "gift": {
