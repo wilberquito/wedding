@@ -1,5 +1,5 @@
 <script>
-    import { data } from './../assets/data.json';
+    import { data } from './../assets/gyc.json';
     export let photos = [];
     export let title = undefined;
     export let description = undefined;

@@ -1,6 +1,6 @@
 <script>
     import { openNewWindow } from "./../utils";
-        import {data} from './../assets/data.json'
+        import {data} from './../assets/gyc.json'
 
         const {
                 googleDocs,

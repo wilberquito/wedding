@@ -85,6 +85,7 @@
 
 <style>
     .countdown__container {
+        color: white;
         background-color: var(--bcolor-1);
         padding: 1rem;
         width: calc(100% - 2rem);
