@@ -1,5 +1,4 @@
 <script>
-    import { onMount } from 'svelte';
     import { data } from './assets/data.json';
     import CountDown from './components/CountDown.svelte';
     import Story from './components/Story.svelte';
