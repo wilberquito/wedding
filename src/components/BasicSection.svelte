@@ -1,6 +1,6 @@
 <script>
 	import { openNewWindow } from './../utils';
-	export let titleImg = undefined;
+	export let titleIcon = false;
 	export let title = undefined;
 	export let description = undefined;
 	export let buttonText = undefined;
@@ -10,8 +10,8 @@
 </script>
 
 <div class="g__section">
-	{#if titleImg}
-		<img src={titleImg} alt="title img" />
+	{#if titleIcon}
+		<i class="fa fa-church"></i>
 	{/if}
 	<h1>{title}</h1>
 	<p class="text">{description}</p>
@@ -21,8 +21,7 @@
 </div>
 
 <style>
-	img {
-		width: 50px;
-		margin-bottom: 1rem;
+	i {
+		font-size: 3rem;
 	}
 </style>

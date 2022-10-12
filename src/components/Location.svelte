@@ -1,5 +1,5 @@
 <script>
-    import { data } from './../assets/data.json';
+    import { data } from './../assets/gyc.json';
         import { openNewWindow } from "./../utils";
 
         const {
