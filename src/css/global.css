@@ -40,13 +40,34 @@ button {
 	background-color: var(--bcolor-2);
 }
 
+.countdown__container {
+	background-color: var(--bcolor-1);
+	color: var(--bcolor-2);
+}
+
 .g__section:nth-child(odd) {
 	background-color: var(--bcolor-1);
 }
 
+
 .g__section:nth-child(odd) button {
-	background-color: var(--bcolor-2);
-	color: var(--bcolor-1);
+	background-color: var(--bcolor-1);
+	color: var(--bcolor-2);
+	border: 3px solid var(--bcolor-2);
+}
+
+.g__section:nth-child(even) button {
+	background-color: var(--bcolor-1);
+	color: var(--bcolor-2);
+	border: 3px solid var(--bcolor-1);
+}
+
+.g__section:nth-child(odd) {
+	color: white !important;
+}
+
+.g__section:nth-child(even) {
+	color: var(--bcolor-1) !important;
 }
 
 @media (min-width: 768px) {

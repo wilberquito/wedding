@@ -1,18 +1,26 @@
 #/!bin/bash
 
-target="src/assets/data.json"
-read -p 'Data source json file: ' copy
-if [[ $copy == *.json ]]; then
-    cp $copy $target 2>/dev/null
-    if [[ $? -eq 0 ]]; then
-        echo "Ok, source copied to data template"
-        npm run build 
-    else
-        echo "Ups! data source -- $copy -- not found"
-        exit 1
-    fi
-else
-    echo "Only json files are supported"
+dataTarget="src/assets/data.json"
+dataJson='./skeleton/data.json'
+cp $dataJson $dataTarget 2>/dev/null
+
+if [[ $? -ne 0 ]]; then
+    echo "Ups! problem overritting - $dataTarget"
     exit 1
+else
+    echo "Ok, source - $dataTarget - overrided"
 fi
 
+cssTarget="src/css/variables.css"
+variablesCss='./skeleton/variables.css'
+cp $variablesCss $cssTarget 2>/dev/null
+
+if [[ $? -ne 0 ]]; then
+    echo "Ups! problem overritting - $cssTarget"
+    exit 1
+else
+    echo "Ok, source - $cssTarget - overrided"
+fi
+
+
+npm run build 

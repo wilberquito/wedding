@@ -15,7 +15,7 @@
 
 <!-- location -->
 <BasicSection
-    titleImg="images/palm.png"
+    titleIcon=true
     title={location.title}
     description={location.description}
     buttonText={location.buttonText}
@@ -26,7 +26,7 @@
 <BasicSection
     title={confirmation.title}
     description={confirmation.description}
-    buttonText={location.buttonText}
+    buttonText={confirmation.buttonText}
     buttonExternalUrl={confirmation.src}
 />
 
