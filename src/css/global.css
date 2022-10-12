@@ -1,11 +1,6 @@
 body {
 	padding: 0;
 	margin: 0;
-	--bcolor-1: rgb(229, 226, 226);
-	--bcolor-2: rgb(246, 246, 246);
-	--bcolor-3: rgb(115, 77, 0);
-	--ssmall: 768px;
-	--smedium: 1024px;
 	overflow-x: hidden;
 }
 
@@ -45,13 +40,34 @@ button {
 	background-color: var(--bcolor-2);
 }
 
+.countdown__container {
+	background-color: var(--bcolor-1);
+	color: var(--bcolor-2);
+}
+
 .g__section:nth-child(odd) {
 	background-color: var(--bcolor-1);
 }
 
+
 .g__section:nth-child(odd) button {
-	background-color: var(--bcolor-3);
-	color: var(--bcolor-1);
+	background-color: var(--bcolor-1);
+	color: var(--bcolor-2);
+	border: 3px solid var(--bcolor-2);
+}
+
+.g__section:nth-child(even) button {
+	background-color: var(--bcolor-1);
+	color: var(--bcolor-2);
+	border: 3px solid var(--bcolor-1);
+}
+
+.g__section:nth-child(odd) {
+	color: white !important;
+}
+
+.g__section:nth-child(even) {
+	color: var(--bcolor-1) !important;
 }
 
 @media (min-width: 768px) {
